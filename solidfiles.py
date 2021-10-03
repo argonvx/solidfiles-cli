@@ -16,7 +16,7 @@ def main():
 
     id, filename, downloadUrl = getfile
     print('Downloading \033[1m%s\033[0m (%s)' % (filename, id))
-    download(url, outname=filename)
+    download(downloadUrl, outname=filename)
 
 def get_file(url):
     webpage = requests.get(url)
